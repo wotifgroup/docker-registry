@@ -27,8 +27,8 @@ run pip install /docker-registry/depends/docker-registry-core
 # Install registry
 run pip install file:///docker-registry#egg=docker-registry[bugsnag]
 
-env DOCKER_REGISTRY_CONFIG /docker-registry/config/config_sample.yml
-env SETTINGS_FLAVOR dev
+env DOCKER_REGISTRY_CONFIG /docker-registry/config/config.yml
+env SETTINGS_FLAVOR prod
 
 expose 5000
 
